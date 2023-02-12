@@ -1,0 +1,25 @@
+@use "../settings/variables";
+
+h1,
+h2,
+h3{
+  font-weight: 300;
+  line-height: 1.13;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+
+h1 {
+  font-family: variables.$font-family-title;
+  font-size: variables.$fs-title-l;
+}
+
+h2 {
+  font-family: variables.$font-family-title-secundary;
+  font-size: variables.$fs-title-m;
+}
+
+h3 {
+  font-family: variables.$font-family-projects;
+  font-size: variables.$fs-title-s;
+}

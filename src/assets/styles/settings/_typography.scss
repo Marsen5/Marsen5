@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "HKGroteskWide-Bold";
+  src: url("../../../public/fonts/HKGroteskWide-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "HKGroteskWide-ExtraBold";
+  src: url("../../../public/fonts/HKGroteskWide-ExtraBold.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "HKGroteskWide-Light";
+  src: url("../../../public/fonts/HKGroteskWide-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "HKGroteskWide-SemiBold";
+  src: url("../../../public/fonts/HKGroteskWide-SemiBold.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Jost-Regular";
+  src: url("../../../public/fonts/Jost-Regular.ttf") format("truetype");
+}
+
+$font-family-text: "Jost-Regular";
+$font-family-title: "HKGroteskWide-ExtraBold";
+$font-family-title-secundary: "HKGroteskWide-Bold";
+$font-family-skills: "HKGroteskWide-Light";
+$font-family-projects: "HKGroteskWide-SemiBold";
+
+// Typography scale
+$fs-base: 14;
+
+$_fs-9: calc(9 / $fs-base) + rem;
+$_fs-12: calc(12 / $fs-base) + rem;
+$_fs-14: calc(14 / $fs-base) + rem;
+$_fs-19: calc(19 / $fs-base) + rem;
+$_fs-25: calc(25 / $fs-base) + rem;
+$_fs-33: calc(33 / $fs-base) + rem;
+$_fs-44: calc(44 / $fs-base) + rem;
+
+// Typography applications
+$fs-pill: $_fs-9;
+$fs-btn: $_fs-12;
+$fs-footer: $_fs-12;
+$fs-menu: $_fs-14;
+$fs-body: $_fs-14;
+$fs-lead: $_fs-19;
+$fs-title-s: $_fs-25;
+$fs-title-m: $_fs-33;
+$fs-title-l: $_fs-44;
