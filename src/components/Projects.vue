@@ -10,7 +10,7 @@
         <img
           v-if="mouseIn.opts.in && mouseIn.opts.img !== ''"
           class="img"
-          :src="`../../public/img/${mouseIn.opts.img}`"
+          :src="`/img/${mouseIn.opts.img}`"
         />
       </div>
       <div

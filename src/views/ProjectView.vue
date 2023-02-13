@@ -8,7 +8,7 @@
       </div>
       <div>
         <div v-for="img of project.photo">
-          <img :src="`../../public/img/${img}`" />
+          <img :src="`/img/${img}`" />
         </div>
       </div>
     </div>
