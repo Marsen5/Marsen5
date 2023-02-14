@@ -7,6 +7,8 @@
         <p>{{ project.description }}</p>
       </div>
       <div>
+        <div v-if="project.video" v-html="project.video" class="video">
+        </div>
         <div v-for="img of project.photo">
           <img :src="`/img/${img}`" />
         </div>
@@ -36,6 +38,11 @@ const project = projects[Number(route.params.index)];
   gap: 65px;
 }
 
+.video {
+  width: 100rem;
+  max-width: 50rem;
+  max-height: 50rem;
+}
 img {
   max-width: 50rem;
 }
