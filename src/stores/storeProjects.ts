@@ -51,6 +51,11 @@ export function storeProjects() {
       type: "BRANDING",
       workFunction: "Identidad",
       name: "Peuets",
+      description:`El logotipo surge del mismo nombre de la tienda dado que es un nombre divertido y que facilita que en la hora de aplicarlo en diferentes apoyos la gente empiezo a verlo y reconozca fácilmente la tienda.
+      Además al ser un negocio local, es muy importante el boca a boca y, por lo tanto, el propio nombre tiene que ser un elemento con mucho peso dentro de la identidad para la comunicación del negocio.
+      Partiendo de esta idea jugamos con el nombre para darle el aspecto infantil y divertido que caracteriza una tienda para niños.
+      El logotipo se puede aplicar de forma que funcione tanto añadiendo los elementos geométricos circulares como sin, para así poderse adaptar fácilmente a diferentes soportes. Por ejemplo, al momento de crear un sello con una sola tinta, se evitaría el uso de los círculos para que sea más claro y limpio, pero a la hora de aplicarlo a la rotulación añadiríamos los elementos circulares para complementar la marca.
+      La tipografía se ha modificado eliminando los blancos de las letras para animarlos poniéndole ojos, incrementando así la parte divertida que queremos transmitir.`,
       photo: [
         "peuets/Logo_Peuets.jpg",
         "peuets/Logo_Peuets2.jpg",
@@ -63,6 +68,7 @@ export function storeProjects() {
       type: "BRANDING + DISEÑO WEB",
       workFunction: "Identidad + diseño web",
       name: "Rustic Fruits",
+      description:"Rustic Fruits es una empresa familiar de agricultores dedicada a la producción agrícola de hortalizas y verduras de la huerta de Benicarló, con una experiencia de más de 70 años dedicados a la agricultura tradicional.",
       photo: [
         "rusticFruits/Logo_RF.jpg",
         "rusticFruits/Mockup.jpg",
@@ -92,7 +98,7 @@ export function storeProjects() {
       type: "BRANDING + VÍDEO",
       workFunction: "Identidad + edición de vídeo",
       name: "Samuel Hus - Asesor Financiero",
-      photo: ["samuel/samuel5.jpg", "samuel/samuel.jpg", "samuel/samuel4.jpg"],
+            photo: ["samuel/samuel5.jpg", "samuel/samuel.jpg", "samuel/samuel4.jpg"],
       year: "2021",
     },
     {
