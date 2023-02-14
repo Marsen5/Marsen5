@@ -1,14 +1,13 @@
 <template>
   <div>
     <div class="content">
-      <div>
+      <div class="content__info">
         <h1>{{ project.name }}</h1>
         <h3>{{ project.workFunction }} {{ project.year }}</h3>
         <p>{{ project.description }}</p>
       </div>
-      <div>
-        <div v-if="project.video" v-html="project.video" class="video">
-        </div>
+      <div class="content__img">
+        <div v-if="project.video" v-html="project.video" class="video"></div>
         <div v-for="img of project.photo">
           <img :src="`/img/${img}`" />
         </div>
@@ -36,14 +35,17 @@ const project = projects[Number(route.params.index)];
   justify-content: center;
   max-width: 50rem;
   gap: 65px;
+
+  &__img {
+    width: 100%
+  }
 }
 
 .video {
-  width: 100rem;
-  max-width: 50rem;
+  max-width: 100%;
   max-height: 50rem;
 }
 img {
-  max-width: 50rem;
+  max-width: 100%;
 }
 </style>

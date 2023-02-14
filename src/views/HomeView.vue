@@ -20,10 +20,6 @@
 <script lang="ts" setup>
 import Projects from "@/components/Projects.vue";
 import Skills from "@/components/Skills.vue";
-import type { Project } from "@/models/project";
-import { storeProjects } from "@/stores/storeProjects";
-
-const projects: Project[] = storeProjects();
 </script>
 
 <style lang="scss" scoped>

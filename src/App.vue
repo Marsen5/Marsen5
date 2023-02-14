@@ -30,6 +30,7 @@
       </Transition>
     </RouterView>
   </body>
+  <footer v-if="routeUrl.name !== 'contacto'">2023 © MAR SENÉN</footer>
 </template>
 
 <script setup lang="ts">
@@ -91,4 +92,6 @@ body {
   opacity: 0;
   //transform: translateX(85vw);
 }
+
+
 </style>

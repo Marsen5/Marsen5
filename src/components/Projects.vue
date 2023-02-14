@@ -80,7 +80,7 @@ function mouseMoved(
 @use "@/assets/styles/settings/variables";
 
 .projects-list {
-  margin-bottom: 20rem;
+  margin-bottom: 10rem;
 }
 
 .project {
@@ -91,6 +91,7 @@ function mouseMoved(
   padding: 0.5em;
   align-items: center;
   font-family: variables.$font-family-projects;
+  flex-wrap: wrap;
 
   * {
     cursor: pointer;
@@ -106,6 +107,15 @@ function mouseMoved(
   }
 }
 
+@media (max-width: 600px) {
+  .project__column {
+    width: 100%;
+  }
+  .project__type {
+    font-size: 0.7rem;
+  }
+}
+
 #cursor {
   position: absolute;
   z-index: 9999;
@@ -118,6 +128,5 @@ function mouseMoved(
   object-fit: contain;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 5px rgb(194, 194, 194);
-
 }
 </style>

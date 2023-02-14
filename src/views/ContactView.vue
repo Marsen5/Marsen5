@@ -67,8 +67,10 @@
 .contenido {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap-reverse;
   align-items: center;
-  gap: 10rem;
+  justify-content: center;
+  gap: 5rem;
 }
 
 img {
