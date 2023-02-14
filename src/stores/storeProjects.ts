@@ -111,7 +111,7 @@ export function storeProjects() {
       workFunction: "Dirección y maquetación editorial",
       name: "Apple Faces",
       photo: [
-        "appleFaces/Apple_Faces_Mar_Senén.jpg",
+        "appleFaces/Apple_Faces_Mar_Senen.jpg",
         "appleFaces/apple_faces_partes.jpg",
         "appleFaces/apple_faces_partes2.jpg",
         "appleFaces/apple_faces_partes3.jpg",

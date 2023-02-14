@@ -23,7 +23,6 @@
             img: project.photo[0],
           })
         "
-        @mousemove="($event) => moving($event)"
         @click="goToProject(index)"
       >
         <div class="project__column">
@@ -75,26 +74,7 @@ function mouseMoved(
   }
 }
 
-function moving(event: any) {
-  if (!!oldTarget.value.target === false) {
-    event.target.style.color = "orange";
 
-    oldTarget.value = event;
-    return;
-  }
-
-  if (
-    !!oldTarget.value.target === true &&
-    oldTarget.value.target !== event.target
-  ) {
-    oldTarget.value.target.style.color = "inherit";
-
-    event.target.style.color = "orange";
-
-    oldTarget.value = event;
-    return
-  }
-}
 </script>
 
 <style lang="scss" scoped>
