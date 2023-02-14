@@ -2,7 +2,7 @@
 
 Graduada en Diseño Gráfico y posteriormente en Técnico Superior en Desarrollo de Aplicaciones Web.Mi formación y experiencia me permiten abarcar todo el proceso necesario para desarrollar una página web, tanto el proceso de diseño y marca, como el proceso del desarrollo tecnológico para hacer que la web funcione de una manera eficiente y efectiva.
 
-#Skills
+# Skills
 Branding
 Diseño UI/UX
 Diseño web con Figma
