@@ -1,5 +1,5 @@
 <template>
-  <div class="content" :class="{ show: isVisible }">
+  <div class="content">
     <div>
       <h1>MAR SENÉN</h1>
       <p>
@@ -18,19 +18,12 @@
 </template>
 
 <script lang="ts" setup>
-import Skills from "@/components/Skills.vue";
 import Projects from "@/components/Projects.vue";
-import { storeProjects } from "@/stores/storeProjects";
+import Skills from "@/components/Skills.vue";
 import type { Project } from "@/models/project";
-import { ref } from "vue";
+import { storeProjects } from "@/stores/storeProjects";
 
 const projects: Project[] = storeProjects();
-
-const isVisible = ref(false);
-setTimeout(() => {
-  isVisible.value = true;
-}, 1000);
-
 </script>
 
 <style lang="scss" scoped>
@@ -38,14 +31,9 @@ p {
   max-width: 50rem;
 }
 
-.content{
+.content {
   display: flex;
   flex-direction: column;
   gap: 65px;
-  opacity: 0;
-  transition: opacity 0.15s ease-in-out;
-  &.show {
-    opacity: 1;
-  }
 }
 </style>

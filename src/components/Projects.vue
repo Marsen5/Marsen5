@@ -2,6 +2,7 @@
   <div>
     <h2>Proyectos</h2>
     <div
+      class="projects-list"
       @mouseleave="
         mouseMoved(mouseIn.index, { in: false, action: '', img: '' })
       "
@@ -36,13 +37,12 @@
 </template>
 
 <script lang="ts" setup>
-import { storeProjects } from "@/stores/storeProjects";
 import type { Project } from "@/models/project";
-import { ref, computed } from "vue";
+import { storeProjects } from "@/stores/storeProjects";
+import { ref } from "vue";
 import { useRouter } from "vue-router";
 
 const router = useRouter();
-const oldTarget = ref({} as any);
 
 const goToProject = (index: number) => {
   router.push({ name: "project", params: { index } });
@@ -68,25 +68,33 @@ function mouseMoved(
 
   if (mouseIn.value.opts.in) {
     document.addEventListener("mousemove", (e) => {
-      cursor.style.left = e.clientX + "px";
-      cursor.style.top = e.clientY + "px";
+      const { scrollY } = window;
+      cursor.style.left = e.clientX + 20 + "px";
+      cursor.style.top = e.clientY - 100 + scrollY + "px";
     });
   }
 }
-
-
 </script>
 
 <style lang="scss" scoped>
 @use "@/assets/styles/settings/variables";
 
+.projects-list {
+  margin-bottom: 20rem;
+}
+
 .project {
+  cursor: pointer;
   border-bottom: 1px blue solid;
   max-width: 50em;
   display: flex;
   padding: 0.5em;
   align-items: center;
   font-family: variables.$font-family-projects;
+
+  * {
+    cursor: pointer;
+  }
 
   &__column {
     display: flex;
@@ -107,7 +115,9 @@ function mouseMoved(
 
 .img {
   width: 30vw;
-  height: 30vh;
   object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px rgb(194, 194, 194);
+
 }
 </style>
