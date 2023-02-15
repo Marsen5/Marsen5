@@ -116,6 +116,8 @@ export function storeProjects() {
       type: "DIRECCION DE ARTE + MAQUETACIÓN",
       workFunction: "Dirección y maquetación editorial",
       name: "Apple Faces",
+      description:`Publicación realizada utilizando fotografías de dispositivos iPhone recogidas en puntos de venta del centro de Barcelona desde el año 2017 hasta el 2020.
+Todas las fotografías de esta publicación han sido realizadas por los usuarios dentro de las diferentes tiendas y dejadas en las bibliotecas de los diferentes dispositivos iPhone.`,
       photo: [
         "appleFaces/Apple_Faces_Mar_Senen.jpg",
         "appleFaces/apple_faces_partes.jpg",
@@ -128,7 +130,7 @@ export function storeProjects() {
       type: "DESARROLLO CON VUE + NODE",
       workFunction: "Desarollo Full Stack",
       name: "Fixtoc",
-      photo: [""],
+      photo: ["fixtoc/fix1.png","fixtoc/fix2.png"],
       year: "2022",
     },
     {
